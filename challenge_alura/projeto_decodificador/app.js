@@ -80,7 +80,7 @@ function validaCaracteres() {
     let caracteres = textIn.value.split("");
     if(caracteres.length == 0)
         return false;
-    const regex = /^[a-zA-Z]+$/;
+        const regex = /^[a-zA-Z\s]+$/; 
     return caracteres.every(item => regex.test(item));
 }
 
